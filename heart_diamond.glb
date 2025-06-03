@@ -1,0 +1,8 @@
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/loaders/OBJLoader.js"></script>
+<script>
+  const objLoader = new THREE.OBJLoader();
+  objLoader.load('heart_shape_diamond.obj', function (object) {
+    object.scale.set(1.5, 1.5, 1.5);
+    scene.add(object);
+  });
+</script>
